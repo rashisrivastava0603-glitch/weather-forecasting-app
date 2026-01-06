@@ -39,7 +39,7 @@ search_label = Label(root, image=search_photo, bd=0, bg = "dark cyan")
 search_label.image=search_photo
 search_label.place(relx=0.48, rely=0.2, anchor="center", x=-2)
 
-# Entry box (PNG ke upar overlap kar diya)
+# Entry box 
 search_entry = Entry(root, font=("Aerial", 14,'bold'), width=17, bd=0, relief=FLAT, bg="white", fg="black")
 search_entry.place(relx=0.48, rely=0.2, anchor="center", x=-5.6)  # x se thoda left adjust
 search_entry.focus()
@@ -85,7 +85,7 @@ fourthbox_label = Label(root, image=fourthbox_photo, bg="dark cyan")
 fourthbox_label.image = fourthbox_photo
 fourthbox_label.place(x=590,y=370)
 
-# --- Add icons (overlapping on boxes) ---
+#Add (icons overlapping on boxes)
 icon_path = "C:/Users/admin/OneDrive/Pictures/01d@2x.png"
 
 day1 = Label(firstbox_label, text="", font=("Helvetica",12,'bold'), bg="darkcyan", fg="white")
@@ -226,3 +226,4 @@ root.bind("<Return>", on_enter_press)
 
 
 root.mainloop()
+
